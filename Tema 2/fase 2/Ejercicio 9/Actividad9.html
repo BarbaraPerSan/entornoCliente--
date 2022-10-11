@@ -1,0 +1,24 @@
+
+<!--9. Escriba un programa JavaScript para calcular los días que quedan hasta la
+próxima Navidad.-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Actividad 9 fase 2</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <script>
+       let fechaActual = new Date()
+       let navidad = new Date(2021,12,25)
+       let dias = Math.round((navidad.getTime() - fechaActual.getTime()) / 86400000)
+       document.write(dias)
+    </script>
+
+</body>
+
+</html>

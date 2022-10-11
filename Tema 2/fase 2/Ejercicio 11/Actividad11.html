@@ -1,0 +1,40 @@
+
+<!--11. Escriba un programa JavaScript para convertir temperaturas desde y hacia
+Celsius, Fahrenheit.
+[Fórmula: c / 5 = (f-32) / 9 [donde c = temperatura en Celsius yf = temperatura en
+Fahrenheit]
+Salida esperada :
+60 ° C es 140 ° F
+45 ° F es 7.222222222222222 ° C-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Actividad 11 fase 2</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <script>
+    function celsius(celsius) {
+        var temp = celsius;
+        var fahrenheit = temp * 9 / 5 + 32;
+        var resultado = temp+'\xB0C is ' + fahrenheit + ' \xB0F.';
+        console.log(resultado);
+    }
+    function fahrenheit(fahrenheit) {
+        var temp = fahrenheit;
+        var celsius = (temp - 32) * 5 / 9;
+        var resultado = temp+'\xB0F is ' + celsius + '\xB0C.';
+        console.log(resultado);
+        }
+    celsius(60);
+    fahrenheit(45);
+
+    </script>
+
+</body>
+
+</html>
